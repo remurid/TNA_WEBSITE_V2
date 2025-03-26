@@ -10,80 +10,65 @@
                     <div class="elementor-widget-container">
                         <!--Main Slider Start-->
                         <section class="main-slider clearfix">
-                            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true,
-"effect": "fade",
-"pagination": {
-    "el": "#main-slider-pagination",
-    "type": "bullets",
-    "clickable": true
-},
-"navigation": {
-    "nextEl": "#main-slider__swiper-button-next",
-    "prevEl": "#main-slider__swiper-button-prev"
-},
-"autoplay": {
-    "delay": 5000        }}'>
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="image-layer" style="
-                        background-image: url(assets/wp-content/uploads/2023/01/main-slider-1-1.jpg);
-                      "></div>
-                                        <!-- /.image-layer -->
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-xl-12">
-                                                    <div class="main-slider__content">
-                                                        <p class="main-slider__sub-title">
-                                                            Save time and fly with comfort
-                                                        </p>
-                                                        <h2 class="main-slider__title">
-                                                            Luxury Jet <br />
-                                                            Flights
-                                                        </h2>
-                                                        <div class="main-slider__btn-box">
-                                                            <a href="about-us/index.html"
-                                                                class="thm-btn main-slider__btn">Book
-                                                                Now</a>
-                                                            <a href="about-us/index.html"
-                                                                class="thm-btn main-slider__btn-two">Read
-                                                                More</a>
-                                                        </div>
+                            <swiper-container class="main-slider clearfix" slides-per-view="1" loop="true" effect="fade"
+                                pagination='{
+                                    "el": ".swiper-pagination",
+                                    "type": "bullets",
+                                    "clickable": true
+                                }' navigation='{
+                                    "nextEl": ".swiper-button-next",
+                                    "prevEl": ".swiper-button-prev"
+                                }' autoplay='{
+                                    "delay": 5000,
+                                    "disableOnInteraction": false
+                                }'>
+                                <swiper-slide class="swiper-slide">
+                                    <div class="image-layer"
+                                        style="background-image: url(assets/wp-content/uploads/2023/01/main-slider-1-1.jpg);">
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="main-slider__content">
+                                                    <p class="main-slider__sub-title">{{year - 2003}} Years of Working
+                                                        Experience</p>
+                                                    <h2 class="main-slider__title">The Best Charter Solution In Africa
+                                                    </h2>
+                                                    <div class="main-slider__btn-box">
+                                                        <a href="about-us/index.html"
+                                                            class="thm-btn main-slider__btn">Book Now</a>
+                                                        <a href="about-us/index.html"
+                                                            class="thm-btn main-slider__btn-two">Read More</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="swiper-slide">
-                                        <div class="image-layer" style="
-                        background-image: url(assets/wp-content/uploads/2023/01/main-slider-1-2.jpg);
-                      "></div>
-                                        <!-- /.image-layer -->
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="col-xl-12">
-                                                    <div class="main-slider__content">
-                                                        <p class="main-slider__sub-title">
-                                                            Save time and fly with comfort
-                                                        </p>
-                                                        <h2 class="main-slider__title">
-                                                            Luxury Jet <br />
-                                                            Flights
-                                                        </h2>
-                                                        <div class="main-slider__btn-box">
-                                                            <a href="#" class="thm-btn main-slider__btn">Book
-                                                                Now</a>
-                                                            <a href="#" class="thm-btn main-slider__btn-two">Read
-                                                                More</a>
-                                                        </div>
+                                </swiper-slide>
+
+                                <swiper-slide class="swiper-slide">
+                                    <div class="image-layer"
+                                        style="background-image: url(assets/wp-content/uploads/2023/01/main-slider-1-2.jpg);">
+                                    </div>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <div class="main-slider__content">
+                                                    <p class="main-slider__sub-title">{{year - 2003}} Years of Working
+                                                        Experience</p>
+                                                    <h2 class="main-slider__title">Comfort And Saftey</h2>
+                                                    <div class="main-slider__btn-box">
+                                                        <a href="#" class="thm-btn main-slider__btn">Book Now</a>
+                                                        <a href="#" class="thm-btn main-slider__btn-two">Read More</a>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- If we need navigation buttons -->
-                            </div>
+                                </swiper-slide>
+                            </swiper-container>
                         </section>
+
                         <!--Main Slider End-->
                     </div>
                 </div>
@@ -108,7 +93,8 @@
                             <img decoding="async" src="assets/wp-content/uploads/2023/01/feature-one-shadow.png"
                                 alt="feature-one-shadow" title="feature-one-shadow" class="feature-one__shadow" />
                             <div class="feature-one__shape-1 float-bob-y-2">
-                                <img decoding="async" src="assets/wp-content/uploads/2023/01/feature-one-shape-1.png"
+                                <img decoding="async" style="max-width: unset;"
+                                    src="assets/wp-content/uploads/2023/01/feature-one-shape-1.png"
                                     alt="feature-one-shape-1" title="feature-one-shape-1" />
                             </div>
                             <div class="container">
@@ -146,8 +132,7 @@
                                                 <span aria-hidden="true" class="icon-calendar"></span>
                                             </div>
                                             <h4 class="feature-one__title">
-                                                <a target="_blank" href="team/index.html">Personal
-                                                    Schedule</a>
+                                                <a target="_blank" href="team/index.html">Personal Schedule</a>
                                             </h4>
                                         </div>
                                     </div>
@@ -196,18 +181,14 @@
                                             <div class="section-title text-left">
                                                 <span class="section-title__tagline">get to know us</span>
                                                 <h2 class="section-title__title">
-                                                    Our jetly save your time and give you comfort
-                                                    in flights
+                                                    We Are Leaders In The Charter Market
                                                 </h2>
                                             </div>
                                             <p class="about-one__text">
-                                                Non augue egestas, commodo velit eget,
-                                                vestibulum tellus. Curabitur vulputate justo
-                                                elit, at elementum orci pulvinar vel.
-                                                Pellentesque habitant morbi tristique.
-                                                Pellentesque habitant morbi tristique. Ut non
-                                                augue egestas, commodo velit eget, vestibulum
-                                                tellus.
+                                                Trans Nation Airways was established under the former office of The
+                                                Chief Executive Officer of MIDROC Technology-Group on May 6, 2003, and
+                                                started operation in April 2004, after receiving air Operator
+                                                Certificate (AOC) from the Ethiopian Civil Aviation Authority.
                                             </p>
                                             <ul class="list-unstyled about-one__points ml-0">
                                                 <li>
@@ -216,8 +197,8 @@
                                                     </div>
                                                     <div class="text">
                                                         <p>
-                                                            There are many variations of passage of
-                                                            lorem.
+                                                            Provide passenger charter, Air Ambulance and cargo transport
+                                                            services whenever it is necessary.
                                                         </p>
                                                     </div>
                                                 </li>
@@ -227,7 +208,8 @@
                                                     </div>
                                                     <div class="text">
                                                         <p>
-                                                            Available but the majority alteration.
+                                                            Engage in activities of leasing, renting and purchasing of
+                                                            airplanes and forming partnership with other airlines.
                                                         </p>
                                                     </div>
                                                 </li>
@@ -245,8 +227,7 @@
                                                         <span class="about-one__call-sub-title">Call
                                                             Anytime</span>
                                                         <p class="about-one__call-number">
-                                                            <a href="tel:+92(8800)-6780">+92 ( 8800 ) -
-                                                                6780</a>
+                                                            <a href="tel:+92(8800)-6780">+251 94 576 2721</a>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -833,184 +814,61 @@
                                 </div>
                                 <div class="testimonial-one__bottom">
                                     <div class="testimonial-one__shape-4" style="
-                      background-image: url(assets/wp-content/uploads/2023/01/testimonial-shape-4-dark.png);
-                    "></div>
-                                    <div class="testimonial-one__carousel owl-carousel owl-theme thm-owl__carousel carousel-dot-style"
-                                        data-owl-options='        {
-"loop": true,
-"margin": 30,
-"items": 2        ,"nav": false                    ,"autoplay": true            ,"autoplayTimeout": 5000                            ,"autoplayHoverPause": true                        ,"dots": false        ,"smartSpeed": 700
-            ,
-    "responsive":
-    {
-                    "0": {
-        "margin": 0,
-        "items": 1                },                            "768": {
-        "margin": 0,
-        "items": 1                },                            "992": {
-        "margin": 30,
-        "items": 2                },                            "1200": {
-        "margin": 30,
-        "items": 2                }                        }
-        }
-'>
-                                        <!--Testimonial One Single Start-->
-                                        <div class="item">
-                                            <div class="testimonial-one__single">
-                                                <div class="testimonial-one__client-img-box">
-                                                    <div class="testimonial-one__img">
-                                                        <img decoding="async"
-                                                            src="assets/wp-content/uploads/2023/01/testimonial-1-4.jpg"
-                                                            alt="" />
-                                                        <div class="testimonial-one__icon-box icon-svg">
-                                                            <span aria-hidden="true" class="icon-quote"></span>
+                                        background-image: url(assets/wp-content/uploads/2023/01/testimonial-shape-4-dark.png);
+                                        "></div>
+                                    <!-- testimonial.component.html -->
+                                    <section
+                                        class="testimonial-section testimonial-one__carousel elementor">
+                                        <swiper-container class="testimonial-carousel" [loop]="true" [spaceBetween]="30"
+                                            [slidesPerView]="2" [autoplay]="{delay: 5000, disableOnInteraction: false}"
+                                            [speed]="700" [breakpoints]="{
+                                            '0': {
+                                            'spaceBetween': 0,
+                                            'slidesPerView': 1
+                                            },
+                                            '768': {
+                                            'spaceBetween': 0,
+                                            'slidesPerView': 1
+                                            },
+                                            '992': {
+                                            'spaceBetween': 30,
+                                            'slidesPerView': 2
+                                            },
+                                            '1200': {
+                                            'spaceBetween': 30,
+                                            'slidesPerView': 2
+                                            }
+                                        }">
+                                            <swiper-slide class="item" *ngFor="let testimonial of testimonials">
+                                                <div class="testimonial-one__single">
+                                                    <div class="testimonial-one__client-img-box">
+                                                        <div class="testimonial-one__img">
+                                                            <img [src]="testimonial.image" [alt]="testimonial.name" />
+                                                            <div class="testimonial-one__icon-box icon-svg">
+                                                                <span aria-hidden="true" class="icon-quote"></span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="testimonial-one__content">
-                                                    <p class="testimonial-one__content-text">
-                                                        There are many variations of passage of
-                                                        available but the majority have suffered
-                                                        alteration in some form by injected humor or
-                                                        randomed.
-                                                    </p>
-                                                    <div class="testimonial-one__rating">
-                                                        <div class="testimonial-one__rating-icon">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </div>
-                                                        <div class="testimonial-one__user">
-                                                            <div class="testimonial-one__user-name">
-                                                                <h4>Jimmy smith</h4>
-                                                                <p>Customer</p>
+                                                    <div class="testimonial-one__content">
+                                                        <p class="testimonial-one__content-text">{{ testimonial.text }}
+                                                        </p>
+                                                        <div class="testimonial-one__rating">
+                                                            <div class="testimonial-one__rating-icon">
+                                                                <i *ngFor="let star of [1,2,3,4,5]"
+                                                                    class="fa fa-star"></i>
+                                                            </div>
+                                                            <div class="testimonial-one__user">
+                                                                <div class="testimonial-one__user-name">
+                                                                    <h4>{{ testimonial.name }}</h4>
+                                                                    <p>{{ testimonial.role }}</p>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <!--Testimonial One Single End-->
-                                        <!--Testimonial One Single Start-->
-                                        <div class="item">
-                                            <div class="testimonial-one__single">
-                                                <div class="testimonial-one__client-img-box">
-                                                    <div class="testimonial-one__img">
-                                                        <img decoding="async"
-                                                            src="assets/wp-content/uploads/2023/01/testimonial-2-2.jpg"
-                                                            alt="" />
-                                                        <div class="testimonial-one__icon-box icon-svg">
-                                                            <span aria-hidden="true" class="icon-quote"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="testimonial-one__content">
-                                                    <p class="testimonial-one__content-text">
-                                                        There are many variations of passage of
-                                                        available but the majority have suffered
-                                                        alteration in some form by injected humor or
-                                                        randomed.
-                                                    </p>
-                                                    <div class="testimonial-one__rating">
-                                                        <div class="testimonial-one__rating-icon">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </div>
-                                                        <div class="testimonial-one__user">
-                                                            <div class="testimonial-one__user-name">
-                                                                <h4>Sarah albert</h4>
-                                                                <p>Customer</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Testimonial One Single End-->
-                                        <!--Testimonial One Single Start-->
-                                        <div class="item">
-                                            <div class="testimonial-one__single">
-                                                <div class="testimonial-one__client-img-box">
-                                                    <div class="testimonial-one__img">
-                                                        <img decoding="async"
-                                                            src="assets/wp-content/uploads/2023/01/testimonial-2-1.jpg"
-                                                            alt="" />
-                                                        <div class="testimonial-one__icon-box icon-svg">
-                                                            <span aria-hidden="true" class="icon-quote"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="testimonial-one__content">
-                                                    <p class="testimonial-one__content-text">
-                                                        There are many variations of passage of
-                                                        available but the majority have suffered
-                                                        alteration in some form by injected humor or
-                                                        randomed.
-                                                    </p>
-                                                    <div class="testimonial-one__rating">
-                                                        <div class="testimonial-one__rating-icon">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </div>
-                                                        <div class="testimonial-one__user">
-                                                            <div class="testimonial-one__user-name">
-                                                                <h4>Bonnie tolbet</h4>
-                                                                <p>Customer</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Testimonial One Single End-->
-                                        <!--Testimonial One Single Start-->
-                                        <div class="item">
-                                            <div class="testimonial-one__single">
-                                                <div class="testimonial-one__client-img-box">
-                                                    <div class="testimonial-one__img">
-                                                        <img decoding="async"
-                                                            src="assets/wp-content/uploads/2023/01/testimonial-1-3.jpg"
-                                                            alt="" />
-                                                        <div class="testimonial-one__icon-box icon-svg">
-                                                            <span aria-hidden="true" class="icon-quote"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="testimonial-one__content">
-                                                    <p class="testimonial-one__content-text">
-                                                        There are many variations of passage of
-                                                        available but the majority have suffered
-                                                        alteration in some form by injected humor or
-                                                        randomed.
-                                                    </p>
-                                                    <div class="testimonial-one__rating">
-                                                        <div class="testimonial-one__rating-icon">
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                            <i class="fa fa-star"></i>
-                                                        </div>
-                                                        <div class="testimonial-one__user">
-                                                            <div class="testimonial-one__user-name">
-                                                                <h4>Christine eve</h4>
-                                                                <p>Customer</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <!--Testimonial One Single End-->
-                                    </div>
+                                            </swiper-slide>
+                                        </swiper-container>
+                                    </section>
                                 </div>
                             </div>
                         </section>
@@ -1082,191 +940,7 @@
         </div>
     </div>
 </section>
-<section
-    class="elementor-section elementor-top-section elementor-element elementor-element-3789c47 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default"
-    data-id="3789c47" data-element_type="section" data-settings='{"stretch_section":"section-stretched"}'>
-    <div class="elementor-container elementor-column-gap-no">
-        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6c84d00"
-            data-id="6c84d00" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-                <div class="elementor-element elementor-element-fcb10d5 elementor-widget elementor-widget-jetly-price"
-                    data-id="fcb10d5" data-element_type="widget" data-widget_type="jetly-price.default">
-                    <div class="elementor-widget-container">
-                        <!--Price One Start-->
-                        <section class="price-one" style="
-                background-image: url(assets/wp-content/uploads/2023/01/price-1-bg-1.png);
-              ">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-xl-4">
-                                        <div class="price-one__left">
-                                            <div class="section-title text-left">
-                                                <span class="section-title__tagline">Private Flights</span>
-                                                <h2 class="section-title__title">
-                                                    Browse legs <br />
-                                                    of our charters
-                                                </h2>
-                                            </div>
-                                            <p class="price-one__text">
-                                                Lorem ipsum dolor sit amet, consectetur
-                                                adipiscing elit. Curabitur condimentum, lacus
-                                                non faucibus congue, lectus quam viverra nulla,
-                                                quis egestas neque sapien ac magna.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-8">
-                                        <div class="price-one__right">
-                                            <div class="price-one__carousel owl-carousel owl-theme thm-owl__carousel"
-                                                data-owl-options='        {
-"loop": true,
-"margin": 30,
-"items": 2        ,"nav": true                    ,"autoplay": true            ,"autoplayTimeout": 5000                            ,"autoplayHoverPause": true                            ,"navText": [
-    "&lt;i class=\"  icon-left-arrow\"&gt;&lt;/i&gt;",
-    "&lt;i class=\"  icon-right-arrow\"&gt;&lt;/i&gt;"
-    ]
-        ,"dots": false        ,"smartSpeed": 700
-            ,
-    "responsive":
-    {
-                    "0": {
-        "margin": 0,
-        "items": 1                },                            "768": {
-        "margin": 30,
-        "items": 2                },                            "992": {
-        "margin": 30,
-        "items": 2                },                            "1200": {
-        "margin": 30,
-        "items": 2                }                        }
-        }
-'>
-                                                <!--Price One Single Start-->
-                                                <div class="item">
-                                                    <div class="price-one__single">
-                                                        <div class="price-one__top">
-                                                            <p>Departure</p>
-                                                            <span class="icon-svg">
-                                                                <i aria-hidden="true" class="fas fa-plane"></i>
-                                                            </span><!-- /.icon-svg -->
-                                                            <p>Arrival</p>
-                                                        </div>
-                                                        <div class="price-one__content">
-                                                            <div class="price-one__img">
-                                                                <img decoding="async"
-                                                                    src="assets/wp-content/uploads/2023/01/price-one-1-1.png"
-                                                                    alt="price-one-1-1" title="price-one-1-1" />
-                                                            </div>
-                                                            <ul class="list-unstyled price-one_list">
-                                                                <li>
-                                                                    <span>Date:</span>Tuesday, Jul 6, 2022
-                                                                </li>
-                                                                <li>
-                                                                    <span>Departure:</span> 11:25 pm
-                                                                </li>
-                                                                <li><span>Arrival:</span> 02:25 am</li>
-                                                                <li>
-                                                                    <span>Starting From:</span> $2786
-                                                                </li>
-                                                                <li><span>Person:</span> Adult 3</li>
-                                                            </ul>
-                                                            <div class="price-one__btn-box">
-                                                                <a href="contact-us/index.html"
-                                                                    class="thm-btn price-one__btn">Book
-                                                                    Now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--Price One Single End-->
-                                                <!--Price One Single Start-->
-                                                <div class="item">
-                                                    <div class="price-one__single">
-                                                        <div class="price-one__top">
-                                                            <p>Departure</p>
-                                                            <span class="icon-svg">
-                                                                <i aria-hidden="true" class="fas fa-plane"></i>
-                                                            </span><!-- /.icon-svg -->
-                                                            <p>Arrival</p>
-                                                        </div>
-                                                        <div class="price-one__content">
-                                                            <div class="price-one__img">
-                                                                <img decoding="async"
-                                                                    src="assets/wp-content/uploads/2023/01/price-one-1-1.png"
-                                                                    alt="price-one-1-1" title="price-one-1-1" />
-                                                            </div>
-                                                            <ul class="list-unstyled price-one_list">
-                                                                <li>
-                                                                    <span>Date:</span>Tuesday, Jul 6, 2022
-                                                                </li>
-                                                                <li>
-                                                                    <span>Departure:</span> 11:25 pm
-                                                                </li>
-                                                                <li><span>Arrival:</span> 02:25 am</li>
-                                                                <li>
-                                                                    <span>Starting From:</span> $2786
-                                                                </li>
-                                                                <li><span>Person:</span> Adult 3</li>
-                                                            </ul>
-                                                            <div class="price-one__btn-box">
-                                                                <a href="contact-us/index.html"
-                                                                    class="thm-btn price-one__btn">Book
-                                                                    Now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--Price One Single End-->
-                                                <!--Price One Single Start-->
-                                                <div class="item">
-                                                    <div class="price-one__single">
-                                                        <div class="price-one__top">
-                                                            <p>Departure</p>
-                                                            <span class="icon-svg">
-                                                                <i aria-hidden="true" class="fas fa-plane"></i>
-                                                            </span><!-- /.icon-svg -->
-                                                            <p>Arrival</p>
-                                                        </div>
-                                                        <div class="price-one__content">
-                                                            <div class="price-one__img">
-                                                                <img decoding="async"
-                                                                    src="assets/wp-content/uploads/2023/01/price-one-1-1.png"
-                                                                    alt="price-one-1-1" title="price-one-1-1" />
-                                                            </div>
-                                                            <ul class="list-unstyled price-one_list">
-                                                                <li>
-                                                                    <span>Date:</span>Tuesday, Jul 6, 2022
-                                                                </li>
-                                                                <li>
-                                                                    <span>Departure:</span> 11:25 pm
-                                                                </li>
-                                                                <li><span>Arrival:</span> 02:25 am</li>
-                                                                <li>
-                                                                    <span>Starting From:</span> $2786
-                                                                </li>
-                                                                <li><span>Person:</span> Adult 3</li>
-                                                            </ul>
-                                                            <div class="price-one__btn-box">
-                                                                <a href="contact-us/index.html"
-                                                                    class="thm-btn price-one__btn">Book
-                                                                    Now</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <!--Price One Single End-->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                        <!--Price One End-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+
 <section
     class="elementor-section elementor-top-section elementor-element elementor-element-4400611 elementor-section-full_width elementor-section-stretched elementor-section-height-default elementor-section-height-default"
     data-id="4400611" data-element_type="section" data-settings='{"stretch_section":"section-stretched"}'>
@@ -1395,79 +1069,52 @@
                         <!--Brand One Start-->
                         <section class="brand-one">
                             <div class="container">
-                                <div class="thm-swiper__slider swiper-container" data-swiper-options='
-{
-"loop": true,
-"spaceBetween": 30,
-"slidesPerView": 5                    ,"autoplayDisableOnInteraction": true                            ,"autoplay": { "delay": 5000 }
-                    ,"pagination": {
-    "el": "#",
-    "type": "bullets",
-    "clickable": true
-    }
-                    ,"navigation": {
-    "nextEl": "#",
-    "prevEl": "#"
-    }
-                    ,"breakpoints": {
-                    "0": {
-        "spaceBetween": 30,
-        "slidesPerView": 2                },                            "375": {
-        "spaceBetween": 30,
-        "slidesPerView": 2                },                            "575": {
-        "spaceBetween": 30,
-        "slidesPerView": 3                },                            "767": {
-        "spaceBetween": 50,
-        "slidesPerView": 4                },                            "951": {
-        "spaceBetween": 50,
-        "slidesPerView": 4                },                            "1199": {
-        "spaceBetween": 100,
-        "slidesPerView": 5                }                        }
-        }
-'>
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
-                                                alt="628" />
-                                        </div>
-                                        <!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
-                                                alt="628" />
-                                        </div>
-                                        <!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
-                                                alt="628" />
-                                        </div>
-                                        <!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
-                                                alt="628" />
-                                        </div>
-                                        <!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
-                                                alt="628" />
-                                        </div>
-                                        <!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
-                                                alt="628" />
-                                        </div>
-                                        <!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
-                                                alt="628" />
-                                        </div>
-                                        <!-- /.swiper-slide -->
-                                        <div class="swiper-slide">
-                                            <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
-                                                alt="628" />
-                                        </div>
-                                        <!-- /.swiper-slide -->
-                                    </div>
-                                </div>
+                                <swiper-container class="thm-swiper__slider swiper-container" slides-per-view="5"
+                                    loop="true" space-between="30" autoplay='{
+                                        "delay": 5000,
+                                        "disableOnInteraction": false
+                                    }' pagination='{
+                                        "el": "#",
+                                        "type": "bullets",
+                                        "clickable": true
+                                    }' navigation='{
+                                        "nextEl": "#",
+                                        "prevEl": "#"
+                                    }'>
+
+                                    <swiper-slide class="swiper-slide">
+                                        <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
+                                            alt="628" />
+                                    </swiper-slide>
+                                    <swiper-slide class="swiper-slide">
+                                        <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
+                                            alt="628" />
+                                    </swiper-slide>
+                                    <swiper-slide class="swiper-slide">
+                                        <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
+                                            alt="628" />
+                                    </swiper-slide>
+                                    <swiper-slide class="swiper-slide">
+                                        <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
+                                            alt="628" />
+                                    </swiper-slide>
+                                    <swiper-slide class="swiper-slide">
+                                        <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
+                                            alt="628" />
+                                    </swiper-slide>
+                                    <swiper-slide class="swiper-slide">
+                                        <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
+                                            alt="628" />
+                                    </swiper-slide>
+                                    <swiper-slide class="swiper-slide">
+                                        <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
+                                            alt="628" />
+                                    </swiper-slide>
+                                    <swiper-slide class="swiper-slide">
+                                        <img decoding="async" src="assets/wp-content/uploads/2023/01/brand-1-1.png"
+                                            alt="628" />
+                                    </swiper-slide>
+                                </swiper-container>
                             </div>
                         </section>
                         <!--Brand One End-->
@@ -1497,8 +1144,8 @@
                                         news and articles
                                     </h2>
                                 </div>
-                                <div class="row">
-                                    <!--Blog One Single Start-->
+                                <!-- <div class="row">
+                                    
                                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="1ms">
                                         <div class="blog-one__single">
                                             <div class="blog-one__img">
@@ -1543,8 +1190,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--Blog One Single End-->
-                                    <!--Blog One Single Start-->
+                                    
+
                                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="2ms">
                                         <div class="blog-one__single">
                                             <div class="blog-one__img">
@@ -1591,8 +1238,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--Blog One Single End-->
-                                    <!--Blog One Single Start-->
+                                    
+
                                     <div class="col-xl-4 col-lg-4 wow fadeInUp" data-wow-delay="3ms">
                                         <div class="blog-one__single">
                                             <div class="blog-one__img">
@@ -1640,8 +1287,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <!--Blog One Single End-->
-                                </div>
+                                   
+                                </div> -->
                             </div>
                         </section>
                         <!--Blog One End-->

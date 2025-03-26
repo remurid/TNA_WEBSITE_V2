@@ -1,16 +1,12 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 declare const $: any;
 
 @Injectable({
   providedIn: 'root'
 })
-export class OwlCarouselService implements OnInit {
+export class OwlCarouselService {
   constructor() {}
-
-  ngOnInit() {
-    this.initCarousels();
-  }
 
   initCarousels() {
     $('.owl-carousel').owlCarousel({
