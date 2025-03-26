@@ -5698,7 +5698,7 @@ ul {
 	position: relative;
 	display: inline-block;
 	font-size: 20px;
-	color: var(--jetly-white);
+	color: var(--jetly-base);
 	font-weight: 500;
 	line-height: 20px;
 	opacity: 0;

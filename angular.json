@@ -26,9 +26,14 @@
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/assets"
+              {
+                "glob": "**/*",
+                "input": "src/assets",
+                "output": "/assets"
+              }
             ],
             "styles": [
+              
               "src/styles.scss",
               "node_modules/jquery-ui-dist/jquery-ui.min.css",
               "node_modules/timepicker/jquery.timepicker.min.css",
@@ -37,8 +42,35 @@
               "node_modules/flatpickr/dist/flatpickr.min.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": [
+            "scripts": [    
               "node_modules/jquery/dist/jquery.min.js",
+              "src/assets/wp-includes/js/jquery/jquery.minf43b.js",
+              "src/assets/wp-includes/js/jquery/jquery-migrate.min5589.js",
+              "src/assets/wp-includes/js/comment-reply.mind1c0.js",
+              "src/assets/wp-includes/js/imagesloaded.minbb93.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/jquery-easing/jquery.easing.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/jquery-appear/jquery.appear.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/jquery-validate/jquery.validate.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/jquery-circle-progress/jquery.circle-progress.minfd65.js",
+              "src/assets/wp-includes/js/jquery/ui/core.minb37e.js",
+              "src/assets/wp-includes/js/jquery/ui/datepicker.minb37e.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/jquery-magnific-popup/jquery.magnific-popup.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/bootstrap-select/js/bootstrap-select.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/bxslider/jquery.bxslider.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/circleType/jquery.circleTypefd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/circleType/jquery.lettering.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/countdown/countdown.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/jarallax/jarallax.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/nice-select/jquery.nice-select.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/odometer/odometer.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/owl-carousel/owl.carousel.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/sharer/sharer.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/swiper/swiper.minfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/timepicker/timePickerfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/vendors/wow/wowfd65.js",
+              "src/assets/wp-content/plugins/jetly-addon/assets/js/jetly-addonfd65.js",
+          
               "node_modules/jquery-ui-dist/jquery-ui.min.js",
               "node_modules/flatpickr/dist/flatpickr.min.js",
               "node_modules/timepicker/jquery.timepicker.min.js",
@@ -106,8 +138,7 @@
               }
             ],
             "styles": [
-              "src/styles.scss",
-              "src/wp-includes/css/dist/block-library/style.mind1c0.css"
+              "src/styles.scss"
             ],
             "scripts": []
           }

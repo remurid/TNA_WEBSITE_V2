@@ -1,11 +1,11 @@
-import { Injectable, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
 
 declare const WOW: any;
 
 @Injectable({
   providedIn: 'root'
 })
-export class WowService implements OnInit {
+export class WowService {
   private wow: any;
 
   constructor() {
@@ -16,10 +16,6 @@ export class WowService implements OnInit {
       mobile: true,
       live: true
     });
-  }
-
-  ngOnInit() {
-    this.init();
   }
 
   init() {
