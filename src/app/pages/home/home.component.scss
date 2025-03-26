@@ -1,0 +1,115 @@
+/* General styles for the time picker container */
+.ui-widget.ui-widget-content.ui-corner-all {
+    border: 1px solid #dddddd;
+    background: #ffffff;
+    color: #333333;
+    border-radius: 4px;
+    padding: 10px;
+    width: 22em; /* Adjust width as needed */
+  }
+  
+  /* Header section of the time picker */
+  .ui-widget-header.ui-corner-all {
+    background: #f8f7f1;
+    border: 1px solid #dddddd;
+    color: #333333;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px 4px 0 0;
+  }
+  
+  /* Close button in the header */
+  #ptTimeSelectCloseCntr {
+    float: right;
+  }
+  
+  #ptTimeSelectCloseCntr a {
+    text-decoration: none;
+    color: #333333;
+    padding: 2px 5px;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    background: #f8f7f1;
+  }
+  
+  #ptTimeSelectCloseCntr a:hover {
+    background: #e6e1d8;
+  }
+  
+  /* User selected time display */
+  #ptTimeSelectUserTime {
+    float: left;
+    font-size: 14px;
+  }
+  
+  /* Time labels (Hour, Minutes) */
+  .ptTimeSelectTimeLabelsCntr {
+    margin-bottom: 10px;
+    overflow: hidden; /* Clear floats */
+  }
+  
+  .ptTimeSelectLeftPane,
+  .ptTimeSelectRightPane {
+    width: 50%;
+    text-align: center;
+    float: left;
+    font-weight: bold;
+  }
+  
+  /* Hour and Minute selection containers */
+  .ptTimeSelectHrAmPmCntr,
+  .ptTimeSelectHrCntr,
+  .ptTimeSelectMinCntr {
+    margin-bottom: 10px;
+    overflow: hidden; /* Clear floats */
+  }
+  
+  /* Individual hour and minute buttons */
+  .ptTimeSelectHr,
+  .ptTimeSelectMin {
+    display: block;
+    width: 45%;
+    float: left;
+    margin: 2px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #333333;
+    background: #f8f7f1;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .ptTimeSelectHr:hover,
+  .ptTimeSelectMin:hover,
+  .ptTimeSelectHr.selected,
+  .ptTimeSelectMin.selected {
+    background: #e6e1d8;
+  }
+  
+  /* Set button at the bottom */
+  #ptTimeSelectSetButton {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #ptTimeSelectSetButton a {
+    display: inline-block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #333333;
+    background: #f8f7f1;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #ptTimeSelectSetButton a:hover {
+    background: #e6e1d8;
+  }
+  
+  /* Clear floats */
+  .br {
+    clear: both;
+  }

@@ -3,7 +3,6 @@ import { AfterViewInit, Component, Inject, OnInit, PLATFORM_ID } from '@angular/
 
 declare var WOW: any;
 declare var $: any;
-declare var $: any;
 declare var flatpickr: any;
 @Component({
   selector: 'app-home',
@@ -12,6 +11,7 @@ declare var flatpickr: any;
   styleUrl: './home.component.scss'
 })
 export class HomeComponent implements OnInit  {
+  
   private countersStarted = false;
   private counterSections: { element: Element, started: boolean }[] = [];
 
@@ -38,10 +38,20 @@ export class HomeComponent implements OnInit  {
     }
   }
   ngAfterViewInit(): void {
+
     if (isPlatformBrowser(this.platformId)) {
       setTimeout(() => {
         this.setupAllCounters();
+        // Initialize datepicker
+      $('#datepicker').datepicker();
+
+      // Initialize timepicker
+      $('.time-picker').timepicker();
+
+      // Initialize nice-select
+      $('select').niceSelect();
       }, 500);
+      
     }
   }
 
@@ -89,7 +99,6 @@ export class HomeComponent implements OnInit  {
       const countTo = parseInt($element.attr('data-stop') || '0');
       const countSpeed = parseInt($element.attr('data-speed') || '1500');
       
-      console.log(`Starting counter: from 0 to ${countTo} with speed ${countSpeed}`);
       
       // Create animation object
       const animObj = { countNum: 0 };

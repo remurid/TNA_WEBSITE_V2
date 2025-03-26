@@ -119,6 +119,10 @@
   <link rel="icon" href="assets/wp-content/uploads/2023/01/loader-270x270.png" sizes="192x192" />
   <link rel="apple-touch-icon" href="assets/wp-content/uploads/2023/01/loader-270x270.png" />
   <meta name="msapplication-TileImage" content="https://bracketweb.com/jetlywp/wp-content/uploads/2023/01/loader-270x270.png" />
+ <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <!-- Add this line to ensure nice-select CSS is loaded -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css">
 </head>
 <body
     class="home page-template page-template-elementor_header_footer page page-id-455 theme-jetly jetly-addon custom-cursor elementor-default elementor-template-full-width elementor-kit-6 elementor-page elementor-page-455">
@@ -379,13 +383,13 @@
         id="owl-carousel-js"></script>
     <script src="assets/wp-content/plugins/jetly-addon/assets/vendors/swiper/swiper.minfd65.js"
         id="swiper-js"></script>
-    <script src="assets/wp-content/plugins/jetly-addon/assets/vendors/nice-select/jquery.nice-select.minfd65.js"
-        id="jquery-nice-select-js"></script>
+    <!-- <script src="assets/wp-content/plugins/jetly-addon/assets/vendors/nice-select/jquery.nice-select.minfd65.js"
+        id="jquery-nice-select-js"></script> -->
     <script src="assets/wp-content/plugins/jetly-addon/assets/vendors/wow/wowfd65.js" id="wow-js"></script>
     <script src="assets/wp-content/plugins/jetly-addon/assets/vendors/sharer/sharer.minfd65.js"
         id="sharer-js"></script>
-    <script src="assets/wp-content/plugins/jetly-addon/assets/vendors/timepicker/timePickerfd65.js"
-        id="timepicker-js"></script>
+    <!-- <script src="assets/wp-content/plugins/jetly-addon/assets/vendors/timepicker/timePickerfd65.js"
+        id="timepicker-js"></script> -->
     <script
         src="assets/wp-content/plugins/jetly-addon/assets/vendors/jquery-validate/jquery.validate.minfd65.js"
         id="jquery-validate-js"></script>
@@ -506,5 +510,21 @@
     </script>
     <script src="assets/wp-content/plugins/elementor/assets/js/frontend.min991d.js"
         id="elementor-frontend-js"></script>
+
+        <!-- Add these scripts at the end of the body -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js"></script>
+  <script>
+    // This will run after the page is fully loaded
+    $(document).ready(function() {
+      setTimeout(function() {
+        // This will initialize nice-select on all select elements
+        if ($.fn.niceSelect) {
+          $('select').niceSelect();
+          console.log('Nice select initialized from index.html');
+        }
+      }, 2000);
+    });
+  </script>
 </body>
 </html>
