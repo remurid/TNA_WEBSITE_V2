@@ -89,40 +89,7 @@ export class HomeComponent implements OnInit  {
     }
   }
 
-  setupAllCounters(): void {
-    // Find all sections containing counters
-    const counterOneSection = document.querySelector('.counter-one');
-    const aboutOneSection = document.querySelector('.about-one__satisfied');
-    
-    // Add all counter sections to our tracking array
-    if (counterOneSection) {
-      this.counterSections.push({ element: counterOneSection, started: false });
-    }
-    
-    if (aboutOneSection) {
-      this.counterSections.push({ element: aboutOneSection, started: false });
-    }
-    
-    if (this.counterSections.length === 0) {
-      console.error('No counter sections found on the page');
-      return;
-    }
-    
-    // Set up observers for all counter sections
-    this.counterSections.forEach((section, index) => {
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting && !section.started) {
-            console.log(`Counter section ${index} is visible, starting counters`);
-            this.startCountersInSection(section.element);
-            section.started = true;
-          }
-        });
-      }, { threshold: 0.1 });
-      
-      observer.observe(section.element);
-    });
-  }
+  
 
   startCountersInSection(section: Element): void {
     // Find all counters within this section
@@ -154,8 +121,7 @@ export class HomeComponent implements OnInit  {
 
 
       
-    }
-  }
+
 
   
   setupAllCounters(): void {
@@ -192,33 +158,7 @@ export class HomeComponent implements OnInit  {
     });
   }
 
-  startCountersInSection(section: Element): void {
-    // Find all counters within this section
-    const counters = section.querySelectorAll('.count-text');
-    
-    counters.forEach((element) => {
-      const $element = $(element);
-      const countTo = parseInt($element.attr('data-stop') || '0');
-      const countSpeed = parseInt($element.attr('data-speed') || '1500');
-      
-      
-      // Create animation object
-      const animObj = { countNum: 0 };
-      
-      $(animObj).animate({
-        countNum: countTo
-      }, {
-        duration: countSpeed,
-        easing: 'linear',
-        step: () => {
-          $element.text(Math.floor(animObj.countNum));
-        },
-        complete: () => {
-          $element.text(countTo);
-        }
-      });
-    });
-  }
+  
  
 
 }
