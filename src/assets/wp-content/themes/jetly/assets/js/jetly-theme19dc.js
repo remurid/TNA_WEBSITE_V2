@@ -146,7 +146,7 @@
             $(".one-page-scroll-menu").find("li").removeClass("current_page_item");
             $(".one-page-scroll-menu").find("li").removeClass("current-menu-parent");
             $(".one-page-scroll-menu")
-              .find("a[href*=\\#" + Sectionid + "]")
+              .find("a[href*=\#" + Sectionid + "]")
               .parent()
               .addClass("current");
           }

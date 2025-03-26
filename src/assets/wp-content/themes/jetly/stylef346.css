@@ -900,7 +900,7 @@ textarea {
 .sidebar__single ul li::after {
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
-	content: '\f105';
+	content: '\\f105';
 	position: absolute;
 	top: 0px;
 	right: 0;
@@ -970,7 +970,7 @@ textarea {
 
 .sidebar .widget.widget_rss li .rss-date::before,
 .sidebar__single.widget_rss li .rss-date::before {
-	content: '\f017';
+	content: '\\f017';
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 400;
 	font-size: 14px;
@@ -1286,7 +1286,7 @@ textarea {
 	top: 4px;
 	left: 0;
 	transition: all 0.4s ease;
-	content: "\f075";
+	content: "\\f075";
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	color: var(--jetly-black, #123821);
@@ -1309,7 +1309,7 @@ textarea {
 
 .sidebar .widget.widget_recent_entries ul li::before,
 .sidebar__single.widget_recent_entries ul li::before {
-	content: "\f044";
+	content: "\\f044";
 }
 
 .sidebar .widget.widget_rss ul,
@@ -1359,7 +1359,7 @@ textarea {
 
 .sidebar .widget.recent-posts-widget-with-thumbnails ul li .rpwwt-post-date::before,
 .sidebar__single.recent-posts-widget-with-thumbnails ul li .rpwwt-post-date::before {
-	content: "\f017";
+	content: "\\f017";
 	font-weight: 900;
 	font-family: "Font Awesome 5 Free";
 	margin-right: 5px;
@@ -1368,7 +1368,7 @@ textarea {
 
 .sidebar .widget.recent-posts-widget-with-thumbnails ul li .rpwwt-post-author::before,
 .sidebar__single.recent-posts-widget-with-thumbnails ul li .rpwwt-post-author::before {
-	content: "\f2bd";
+	content: "\\f2bd";
 	font-weight: 900;
 	font-family: "Font Awesome 5 Free";
 	margin-right: 5px;
@@ -1423,7 +1423,7 @@ textarea {
 
 .sidebar .widget.recent-posts-widget-with-thumbnails ul li .rpwwt-post-comments-number::before,
 .sidebar__single.recent-posts-widget-with-thumbnails ul li .rpwwt-post-comments-number::before {
-	content: "\f086";
+	content: "\\f086";
 	font-weight: 400;
 	font-family: "Font Awesome 5 Free";
 	margin-right: 5px;
@@ -1655,7 +1655,7 @@ textarea {
 }
 
 .sidebar .widget .wp-block-latest-comments__comment-date::before {
-	content: "\f017";
+	content: "\\f017";
 	margin-right: 5px;
 	font-family: "Font Awesome 5 Free";
 	font-weight: 400;
@@ -1736,12 +1736,12 @@ textarea {
 	color: var(--jetly-base, #a79132);
 	font-weight: 900;
 	font-family: "Font Awesome 5 Free";
-	content: "\f2bd";
+	content: "\\f2bd";
 	margin-right: 5px;
 }
 
 .sidebar .widget .wp-block-latest-posts__list .wp-block-latest-posts__post-date::before {
-	content: "\f017";
+	content: "\\f017";
 	margin-right: 5px;
 	font-family: "Font Awesome 5 Free";
 	font-weight: 400;
@@ -1828,12 +1828,12 @@ textarea {
 	color: var(--jetly-base, #a79132);
 	font-weight: 400;
 	font-family: "Font Awesome 5 Free";
-	content: "\f2bd";
+	content: "\\f2bd";
 	margin-right: 5px;
 }
 
 .sidebar .widget .wp-block-rss__item .wp-block-rss__item-publish-date::before {
-	content: "\f017";
+	content: "\\f017";
 	margin-right: 5px;
 	font-family: "Font Awesome 5 Free";
 	font-weight: 400;
@@ -4465,7 +4465,7 @@ ul {
 	right: 20px;
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
-	content: "\f105";
+	content: "\\f105";
 	font-size: 14px;
 	color: var(--jetly-base);
 	transform: translateY(-50%) scale(0);
@@ -5698,7 +5698,7 @@ ul {
 	position: relative;
 	display: inline-block;
 	font-size: 20px;
-	color: var(--jetly-white);
+	color: var(--jetly-base);
 	font-weight: 500;
 	line-height: 20px;
 	opacity: 0;
@@ -9482,7 +9482,7 @@ ul {
 }
 
 .faq-one-accrodion .accrodion-title h4::before {
-	content: "\f105";
+	content: "\\f105";
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	font-size: 15px;
@@ -9506,7 +9506,7 @@ ul {
 }
 
 .faq-one-accrodion .accrodion.active .accrodion-title h4::before {
-	content: "\f107";
+	content: "\\f107";
 	color: var(--jetly-white);
 	background-color: var(--jetly-black);
 	border-radius: 50%;
@@ -11550,7 +11550,7 @@ blockquote {
 .news-details__content blockquote:not([class*=has-])::before,
 .comment-content blockquote::before,
 .news-details__content .wp-block-quote::before {
-	content: '\f10d';
+	content: '\\f10d';
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	position: absolute;
@@ -11726,7 +11726,7 @@ label {
 }
 
 .wp-block-latest-comments:not(.has-avatar):not(.has-dates) li::before {
-	content: "\f075";
+	content: "\\f075";
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	font-size: 16px;
@@ -11770,7 +11770,7 @@ label {
 }
 
 .wp-block-rss li::before {
-	content: '\f09e';
+	content: '\\f09e';
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	font-size: 16px;
@@ -11868,7 +11868,7 @@ ul.wp-block-rss.wp-block-rss {
 }
 
 .wp-block-latest-posts__list.has-dates li::before {
-	content: '\f302';
+	content: '\\f302';
 	font-family: 'Font Awesome 5 Free';
 	font-weight: 900;
 	font-size: 16px;
@@ -14477,7 +14477,7 @@ ul.list-unstyled.news-sidebar__meta.ml-0 li {
 	right: 20px;
 	top: 5px;
 	font-family: 'icomoon' !important;
-	content: "\e91e";
+	content: "\\e91e";
 	opacity: 1;
 	font-size: 15px;
 	color: var(--jetly-base);
@@ -15805,7 +15805,7 @@ ul.list-unstyled.news-sidebar__meta.ml-0 li {
 .checkout__payment__item--active .checkout__payment__title::before {
 	background-color: var(--jetly-base);
 	border-color: var(--jetly-base);
-	content: '\f00c';
+	content: '\\f00c';
 }
 
 .checkout__payment__content {
@@ -16001,7 +16001,7 @@ body.boxed-wrapper {
 }
 
 .yith-wcwl-share ul li .fa.fa-envelope-o::before {
-	content: '\f0e0';
+	content: '\\f0e0';
 }
 
 .has-fixed-footer,
@@ -16051,7 +16051,7 @@ body.boxed-wrapper {
 }
 
 .star-rating::before {
-	content: "\53\53\53\53\53";
+	content: "\\53\\53\\53\\53\\53";
 	opacity: 0.25;
 	float: left;
 	top: 0;
@@ -16069,7 +16069,7 @@ body.boxed-wrapper {
 }
 
 .star-rating span::before {
-	content: "\53\53\53\53\53";
+	content: "\\53\\53\\53\\53\\53";
 	top: 0;
 	position: absolute;
 	left: 0;
@@ -16096,38 +16096,38 @@ p.stars a::before {
 	height: 1em;
 	line-height: 1;
 	font-family: star;
-	content: "\53";
+	content: "\\53";
 	color: #404040;
 	text-indent: 0;
 	opacity: 0.25;
 }
 
 p.stars a:hover~a::before {
-	content: "\53";
+	content: "\\53";
 	color: #404040;
 	opacity: 0.25;
 }
 
 p.stars:hover a::before {
-	content: "\53";
+	content: "\\53";
 	color: var(--jetly-base);
 	opacity: 1;
 }
 
 p.stars.selected a.active::before {
-	content: "\53";
+	content: "\\53";
 	color: var(--jetly-base);
 	opacity: 1;
 }
 
 p.stars.selected a.active~a::before {
-	content: "\53";
+	content: "\\53";
 	color: #404040;
 	opacity: 0.25;
 }
 
 p.stars.selected a:not(.active)::before {
-	content: "\53";
+	content: "\\53";
 	color: var(--jetly-base);
 	opacity: 1;
 }
@@ -16182,7 +16182,7 @@ a.woocommerce-product-gallery__trigger img {
 
 .woocommerce-product-gallery__trigger::after {
 	position: absolute;
-	content: "\f1a2";
+	content: "\\f1a2";
 	font-family: 'Flaticon' !important;
 	font-size: 16px;
 	color: #222429;
@@ -16628,7 +16628,7 @@ form.woocommerce-checkout .shop_table tfoot tr th,
 	right: 0;
 	top: -1px;
 	font-family: "Flaticon";
-	content: "\f15f";
+	content: "\\f15f";
 	opacity: 1;
 	font-size: 10px;
 	line-height: 30px;
@@ -16978,7 +16978,7 @@ ul.products li.product .onsale {
 }
 
 .woocommerce-pagination ul li a.prev::before {
-	content: "\f104";
+	content: "\\f104";
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	text-indent: 0;
@@ -16989,7 +16989,7 @@ ul.products li.product .onsale {
 }
 
 .woocommerce-pagination ul li a.next::before {
-	content: "\f105";
+	content: "\\f105";
 	font-family: "Font Awesome 5 Free";
 	font-weight: 900;
 	text-indent: 0;
@@ -17605,7 +17605,7 @@ a.woocommerce-privacy-policy-link {
 }
 
 .woocommerce-checkout #customer_details h3 label input:checked+span::after {
-	content: '\f00c';
+	content: '\\f00c';
 	background-color: var(--jetly-primary);
 }
 
@@ -17895,7 +17895,7 @@ form.woocommerce-checkout .shop_table tfoot th {
 .woocommerce-checkout-payment .wc_payment_methods li input:checked+label::before {
 	background-color: var(--jetly-base);
 	border-color: var(--jetly-base);
-	content: '\f00c';
+	content: '\\f00c';
 }
 
 .woocommerce-checkout-payment .wc_payment_methods li img {
@@ -19015,7 +19015,7 @@ ul.products .product__add-to-cart .thm-btn.product__all-btn.loading {
 
 ul.products .product__add-to-cart .thm-btn.product__all-btn.loading::after {
 	font-family: 'Font Awesome 5 Free';
-	content: "\f110";
+	content: "\\f110";
 	vertical-align: top;
 	font-weight: 900;
 	position: absolute;
